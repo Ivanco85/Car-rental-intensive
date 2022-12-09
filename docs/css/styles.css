@@ -57,7 +57,7 @@ body {
 }
 
 .info {
-    background-image: url(./img/info-jpg.jpg);
+    background-image: url(/docs/img/info-jpg.jpg);
     background-size: cover;
     position: center;
 }
