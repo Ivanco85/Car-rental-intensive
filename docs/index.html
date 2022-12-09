@@ -37,11 +37,11 @@
                         распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной
                         возможностью побывать за рулем настоящей легенды и узнать, на что она способна за пределами
                         гоночной трассы!</p>
-                    <button class="button">Посмотреть автомобили</button>
+                    <button class="button" id="info-button" >Посмотреть автомобили</button>
                 </div>
             </div>
         </section>
-        <section class="car">
+        <section class="car" id="cars">
             <div class="container">
                 <h2 class="sub_title">Наш автопарк</h2>
                 <div class="car_gallery">
@@ -65,7 +65,7 @@
                                 <p class="car-info-text2">2019</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                     <div class="car_gallery-inner">
                         <img src="./img/img-2.png" alt="" class="car-gallery-img">
@@ -87,7 +87,7 @@
                                 <p class="car-info-text2">2017</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                     <div class="car_gallery-inner">
                         <img src="./img/img-3.png" alt="" class="car-gallery-img">
@@ -109,7 +109,7 @@
                                 <p class="car-info-text2">2010</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                     <div class="car_gallery-inner">
                         <img src="./img/img-4.png" alt="" class="car-gallery-img">
@@ -131,7 +131,7 @@
                                 <p class="car-info-text2">2019</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                     <div class="car_gallery-inner">
                         <img src="./img/img-5.png" alt="" class="car-gallery-img">
@@ -153,7 +153,7 @@
                                 <p class="car-info-text2">2018</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                     <div class="car_gallery-inner">
                         <img src="./img/img-6.png" alt="" class="car-gallery-img">
@@ -175,7 +175,7 @@
                                 <p class="car-info-text2">2019</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                     <div class="car_gallery-inner">
                         <img src="./img/7.png" alt="" class="car-gallery-img">
@@ -197,7 +197,7 @@
                                 <p class="car-info-text2">2018</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                     <div class="car_gallery-inner">
                         <img src="./img/8.png" alt="" class="car-gallery-img">
@@ -219,7 +219,7 @@
                                 <p class="car-info-text2">2019</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                     <div class="car_gallery-inner">
                         <img src="./img/9.png" alt="" class="car-gallery-img">
@@ -241,22 +241,22 @@
                                 <p class="car-info-text2">2019</p>
                             </div>
                         </div>
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="car_price">
+        <section class="car_price" id="price">
             <div class="container">
                 <div class="car_price_inner">
                     <h2 class="sub_title">Узнать цену и забронировать</h2>
                     <div class="car_price-text">Заполните данные, и мы перезвоним вам для уточнения всех деталей
                         бронирования</div>
                     <form action="" class="car_price-form">
-                        <input class="price-input" type="text" placeholder="Ваше имя">
-                        <input class="price-input" type="text" placeholder="Ваш телефон">
-                        <input class="price-input" type="text" placeholder="Автомобиль, который вас интересует">
-                        <button class="button">Узнать цену</button>
+                        <input class="price-input" type="text" id="name" placeholder="Ваше имя">
+                        <input class="price-input" type="text" id="phone" placeholder="Ваш телефон">
+                        <input class="price-input" type="text" id="car" placeholder="Автомобиль, который вас интересует">
+                        <button class="button" type="button" id="price-action">Узнать цену</button>
                     </form>
                     <img class="car_price-img" src="./img/rolls-jpg.png" alt="rolls">
                 </div>
@@ -271,6 +271,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

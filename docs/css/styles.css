@@ -131,8 +131,12 @@ body {
 .car-gallery-img {
     vertical-align: bottom;
     margin-bottom: 15px;
+    transition: all .3s;
 }
 
+.car-gallery-img:hover {
+    transform: scale(1.1);
+}
 
 .car-gallery-title {
     font-size: 24px;
