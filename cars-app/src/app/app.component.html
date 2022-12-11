@@ -12,7 +12,7 @@
         </div>
     </div>
 </header>
-<main class="main">
+<main class="main" [ngStyle]="bgPos">
     <section class="info">
         <div class="container">
             <div class="info_inner">
@@ -49,7 +49,7 @@
                             <p class="car-info-text2">{{car.year}}</p>
                         </div>
                     </div>
-                    <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+                    <button class="button car-button" (click)="goScroll(price, car)">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
                     <button class="button" type="button" id="price-action" (click)="onSubmit()"
                         [disabled]="!priceForm.valid">Узнать цену</button>
                 </form>
-                <img class="car_price-img" src="../assets/img/rolls-jpg.png" alt="rolls">
+                <img class="car_price-img" src="../assets/img/rolls-jpg.png" alt="rolls" [ngStyle]="trans">
             </div>
         </div>
     </section>
