@@ -1,258 +1,83 @@
 <header class="header">
-  <div class="container">
-      <div class="header_inner">
-          <img src="../assets/img/logo.png" alt="logo" class="logo">
-          <nav class="menu">
-              <ul class="menu_item">
-                  <li><a href="#">Главная</a></li>
-                  <li><a href="#">Автомобили</a></li>
-                  <li><a href="#">Бронирование авто</a></li>
-              </ul>
-          </nav>
-      </div>
-  </div>
+    <div class="container">
+        <div class="header_inner">
+            <img src="../assets/img/logo.png" alt="logo" class="logo">
+            <nav class="menu">
+                <ul class="menu_item">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Автомобили</a></li>
+                    <li><a href="#">Бронирование авто</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
 <main class="main">
-  <section class="info">
-      <div class="container">
-          <div class="info_inner">
-              <h1 class="info-title">Аренда премиальных автомобилей</h1>
-              <p class="info-text">В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно
-                  распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной
-                  возможностью побывать за рулем настоящей легенды и узнать, на что она способна за пределами
-                  гоночной трассы!</p>
-              <button class="button" id="info-button" (click)="goScroll(cars)">Посмотреть автомобили</button>
-          </div>
-      </div>
-  </section>
-  <section class="car" id="cars" #cars>
-      <div class="container">
-          <h2 class="sub_title">Наш автопарк</h2>
-          <div class="car_gallery">
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/img-1.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Lamborghini Huracan Spyder</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">5.2 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">Год выпуска</p>
-                          <p class="car-info-text2">2019</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/img-2.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Chevrolet Corvette</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">6.2 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">Год выпуска</p>
-                          <p class="car-info-text2">2017</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/img-3.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Ferrari California</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">3.9 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">Год выпуска</p>
-                          <p class="car-info-text2">2010</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/img-4.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Lamborghini Urus</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">4.0 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">Год выпуска</p>
-                          <p class="car-info-text2">2019</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/img-5.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Audi R8</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат/p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">5.2 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">Год выпуска</p>
-                          <p class="car-info-text2">2018</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/img-6.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Аренда Chevrolet Camaro</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">2.0 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">.Год выпуска</p>
-                          <p class="car-info-text2">2019</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/7.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Maserati Quattroporte</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">3.0 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">Год выпуска</p>
-                          <p class="car-info-text2">2018</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/8.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Dodge Challenger</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">6.4 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">Год выпуска</p>
-                          <p class="car-info-text2">2019</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-              <div class="car_gallery-inner">
-                  <img src="../assets/img/9.png" alt="" class="car-gallery-img">
-                  <div class="car-gallery-title">Nissan GT-R</div>
-                  <div class="car-gallery-info">
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/transmission.png" alt="transmission" class="drive">
-                          <p class="car-info-text1">Коробка</p>
-                          <p class="car-info-text2">автомат</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/Group.svg" alt="Group" class="drive">
-                          <p class="car-info-text1">Двигатель</p>
-                          <p class="car-info-text2">3.8 л.с.</p>
-                      </div>
-                      <div class="car-gallery-point">
-                          <img src="../assets/img/year.png" alt="year" class="drive">
-                          <p class="car-info-text1">Год выпуска</p>
-                          <p class="car-info-text2">2019</p>
-                      </div>
-                  </div>
-                  <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
-              </div>
-          </div>
-      </div>
-  </section>
-  <section class="car_price" id="price" #price>
-      <div class="container">
-          <div class="car_price_inner">
-              <h2 class="sub_title">Узнать цену и забронировать</h2>
-              <div class="car_price-text">Заполните данные, и мы перезвоним вам для уточнения всех деталей
-                  бронирования</div>
-              <form action="" class="car_price-form">
-                  <input class="price-input" type="text" id="name" placeholder="Ваше имя">
-                  <input class="price-input" type="text" id="phone" placeholder="Ваш телефон">
-                  <input class="price-input" type="text" id="car"
-                      placeholder="Автомобиль, который вас интересует">
-                  <button class="button" type="button" id="price-action">Узнать цену</button>
-              </form>
-              <img class="car_price-img" src="../assets/img/rolls-jpg.png" alt="rolls">
-          </div>
-      </div>
-  </section>
+    <section class="info">
+        <div class="container">
+            <div class="info_inner">
+                <h1 class="info-title">Аренда премиальных автомобилей</h1>
+                <p class="info-text">В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно
+                    распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной
+                    возможностью побывать за рулем настоящей легенды и узнать, на что она способна за пределами
+                    гоночной трассы!</p>
+                <button class="button" id="info-button" (click)="goScroll(cars)">Посмотреть автомобили</button>
+            </div>
+        </div>
+    </section>
+    <section class="car" id="cars" #cars>
+        <div class="container">
+            <h2 class="sub_title">Наш автопарк</h2>
+            <div class="car_gallery">
+                <div class="car_gallery-inner" *ngFor="let car of carsData">
+                    <img src="../assets/img/{{car.Image}}" alt="" class="car-gallery-img">
+                    <div class="car-gallery-title">{{car.name}}</div>
+                    <div class="car-gallery-info">
+                        <div class="car-gallery-point">
+                            <img src="../assets/img/transmission.png" alt="transmission" class="drive">
+                            <p class="car-info-text1">Коробка</p>
+                            <p class="car-info-text2">{{car.transmission}}</p>
+                        </div>
+                        <div class="car-gallery-point">
+                            <img src="../assets/img/Group.svg" alt="Group" class="drive">
+                            <p class="car-info-text1">Двигатель</p>
+                            <p class="car-info-text2">{{car.engine}} л.с.</p>
+                        </div>
+                        <div class="car-gallery-point">
+                            <img src="../assets/img/year.png" alt="year" class="drive">
+                            <p class="car-info-text1">Год выпуска</p>
+                            <p class="car-info-text2">{{car.year}}</p>
+                        </div>
+                    </div>
+                    <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="car_price" id="price" #price>
+        <div class="container">
+            <div class="car_price_inner">
+                <h2 class="sub_title">Узнать цену и забронировать</h2>
+                <div class="car_price-text">Заполните данные, и мы перезвоним вам для уточнения всех деталей
+                    бронирования</div>
+                <form action="" class="car_price-form" [formGroup]="priceForm">
+                    <input class="price-input" type="text" id="name" placeholder="Ваше имя" formControlName="name">
+                    <input class="price-input" type="text" id="phone" placeholder="Ваш телефон" formControlName="phone">
+                    <input class="price-input" type="text" id="car" placeholder="Автомобиль, который вас интересует"
+                        formControlName="car">
+                    <button class="button" type="button" id="price-action" (click)="onSubmit()"
+                        [disabled]="!priceForm.valid">Узнать цену</button>
+                </form>
+                <img class="car_price-img" src="../assets/img/rolls-jpg.png" alt="rolls">
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="footer">
-  <div class="container">
-      <div class="footer_inner">
-          <img src="../assets/img/logo.png" alt="logo" class="logo">
-          <div class="footer_inner-text">Все права защищены</div>
-      </div>
-  </div>
+    <div class="container">
+        <div class="footer_inner">
+            <img src="../assets/img/logo.png" alt="logo" class="logo">
+            <div class="footer_inner-text">Все права защищены</div>
+        </div>
+    </div>
 </footer>
