@@ -30,7 +30,7 @@
             <h2 class="sub_title">Наш автопарк</h2>
             <div class="car_gallery">
                 <div class="car_gallery-inner" *ngFor="let car of carsData">
-                    <img src="../assets/img/{{car.Image}}" alt="" class="car-gallery-img">
+                    <img src="{{car.image}}" alt="Image" class="car-gallery-img">
                     <div class="car-gallery-title">{{car.name}}</div>
                     <div class="car-gallery-info">
                         <div class="car-gallery-point">
