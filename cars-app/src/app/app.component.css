@@ -1,0 +1,215 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    gap: 244px;
+}
+
+.logo {
+    width: 113px;
+    height: 39px;
+}
+
+.menu {
+    width: 515px;
+}
+
+.menu_item {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu_item a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #030305;
+}
+
+.menu_item :hover a {
+    border-bottom: 2px solid black;
+}
+
+.info {
+    background-image: url(../assets/img/info-jpg.jpg);
+    background-size: cover;
+    position: center;
+}
+
+.info_inner {
+    height: 705px;
+    padding: 105px 0 154px;
+}
+
+.info-title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+
+.info-text {
+    max-width: 502px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.button {
+    width: 334px;
+    height: 64px;
+    color: #fff;
+    background: #030305;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color .5s;
+}
+
+.button:hover {
+    background: #575757;
+    cursor: pointer;
+}
+
+.car {
+    padding: 100px 0;
+}
+
+.sub_title {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 40px;
+}
+
+.car_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.car_gallery-inner {
+    max-width: 384px;
+    text-align: center;
+}
+
+.car_gallery-inner .button {
+    width: 100%;
+    padding: 15px;
+    height: 54px;
+}
+
+.car-gallery-img {
+    vertical-align: bottom;
+    margin-bottom: 15px;
+    transition: all .3s;
+}
+
+.car-gallery-img:hover {
+    transform: scale(1.1);
+}
+
+.car-gallery-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.car-gallery-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13px;
+}
+
+.car-gallery-point {
+    width: 110px;
+}
+
+.car-info-text2 {
+    font-weight: 400;
+}
+
+.car_price {
+    overflow: hidden;
+}
+
+.car_price_inner {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.car_price_inner .sub_title {
+    margin-bottom: 20px;
+}
+
+.car_price-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 60px;
+}
+
+.car_price-form {
+    max-width: 344px;
+}
+
+.price-input {
+    box-sizing: border-box;
+    padding: 22px 18px;
+    width: 344px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.price-input::placeholder {
+    color: #5D5D5F;
+}
+
+.car_price-form .button {
+    width: 100;
+}
+
+.car_price-img {
+    position: absolute;
+    bottom: 0;
+    left: 401px;
+}
+
+.footer {
+    border-top: 1px solid #E5E5E5;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.footer_inner-text {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.car_price-form .button {
+    width: 100%;
+}
