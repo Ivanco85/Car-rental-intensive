@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container">
         <div class="header_inner">
-            <img src="../assets/img/logo.png" alt="logo" class="logo">
+            <img src="assets/img/logo.png" alt="logo" class="logo">
             <nav class="menu">
                 <ul class="menu_item">
                     <li><a href="#">Главная</a></li>
@@ -28,23 +28,27 @@
     <section class="car" id="cars" #cars>
         <div class="container">
             <h2 class="sub_title">Наш автопарк</h2>
+            <div class="car-toggle">
+                <div [ngClass]="{active: category === 'sport'}" (click)="toggleCategory('sport')">Sport</div>
+                <div [ngClass]="{active: category === 'luxury'}" (click)="toggleCategory('luxury')">Luxury</div>
+            </div>
             <div class="car_gallery">
                 <div class="car_gallery-inner" *ngFor="let car of carsData">
                     <img src="{{car.image}}" alt="Image" class="car-gallery-img">
                     <div class="car-gallery-title">{{car.name}}</div>
                     <div class="car-gallery-info">
                         <div class="car-gallery-point">
-                            <img src="../assets/img/transmission.png" alt="transmission" class="drive">
+                            <img src="assets/img/transmission.png" alt="transmission" class="drive">
                             <p class="car-info-text1">Коробка</p>
                             <p class="car-info-text2">{{car.transmission}}</p>
                         </div>
                         <div class="car-gallery-point">
-                            <img src="../assets/img/Group.svg" alt="Group" class="drive">
+                            <img src="assets/img/Group.svg" alt="Group" class="drive">
                             <p class="car-info-text1">Двигатель</p>
                             <p class="car-info-text2">{{car.engine}} л.с.</p>
                         </div>
                         <div class="car-gallery-point">
-                            <img src="../assets/img/year.png" alt="year" class="drive">
+                            <img src="assets/img/year.png" alt="year" class="drive">
                             <p class="car-info-text1">Год выпуска</p>
                             <p class="car-info-text2">{{car.year}}</p>
                         </div>
@@ -68,7 +72,7 @@
                     <button class="button" type="button" id="price-action" (click)="onSubmit()"
                         [disabled]="!priceForm.valid">Узнать цену</button>
                 </form>
-                <img class="car_price-img" src="../assets/img/rolls-jpg.png" alt="rolls" [ngStyle]="trans">
+                <img class="car_price-img" src="assets/img/rolls-jpg.png" alt="rolls" [ngStyle]="trans">
             </div>
         </div>
     </section>
@@ -76,7 +80,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer_inner">
-            <img src="../assets/img/logo.png" alt="logo" class="logo">
+            <img src="assets/img/logo.png" alt="logo" class="logo">
             <div class="footer_inner-text">Все права защищены</div>
         </div>
     </div>
